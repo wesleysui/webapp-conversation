@@ -13,9 +13,22 @@ import Button from '@/app/components/base/button'
 export const AppInfoComp: FC<{ siteInfo: AppInfo }> = ({ siteInfo }) => {
   const { t } = useTranslation()
   return (
-    <div>
-      <div className='flex items-center py-2 text-xl font-medium text-gray-700 rounded-md'>👏 {t('app.common.welcome')} {siteInfo.title}</div>
-      <p className='text-sm text-gray-500'>{siteInfo.description}</p>
+    <div className={s.presidentContainer}>
+      {/* President's Photo */}
+      <img
+        src="/president.png"
+        alt="Nigerian President"
+        className={s.presidentImage}
+      />
+      {/* Quote */}
+      <blockquote className={s.quote}>
+        <p>
+          "To be a global leader in harnessing the transformative power of AI through responsible, ethical, and inclusive innovation, fostering sustainable development through collaborative efforts."
+        </p>
+        <footer className={s.quoteFooter}>
+          – Inspired by the vision of President Bola Ahmed Tinubu
+        </footer>
+      </blockquote>
     </div>
   )
 }

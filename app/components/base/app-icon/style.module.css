@@ -1,4 +1,4 @@
-.appIcon {
+/* .appIcon {
   @apply flex items-center justify-center relative w-9 h-9 text-lg bg-teal-100 rounded-lg grow-0 shrink-0;
 }
 
@@ -20,4 +20,4 @@
 
 .appIcon.rounded {
   @apply rounded-full;
-}
+} */
