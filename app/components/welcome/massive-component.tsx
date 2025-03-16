@@ -16,7 +16,7 @@ export const AppInfoComp: FC<{ siteInfo: AppInfo }> = ({ siteInfo }) => {
     <div className={s.presidentContainer}>
       {/* President's Photo */}
       <img
-        src="/president.png"
+        src="/president.PNG"
         alt="Nigerian President"
         className={s.presidentImage}
       />
